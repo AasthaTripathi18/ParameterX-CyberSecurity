@@ -397,15 +397,64 @@ body {
 } */
 
 
-@media (max-width: 768px) {
-  .navbar { padding: 15px 30px; }
-  .nav-links { display: none; }
-  .hero { padding: 0 30px; text-align: center; }
-  .hero h1 { font-size: 2.6rem; }
-  .hero .x { font-size: 3rem; }
-  .headline { font-size: 1.5rem; }
-  .hero-buttons { justify-content: center; }
-  .glow { display: none; }
+/* Phones / Extra Small Screens */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 12px 20px;
+  }
+
+  .hero {
+    padding: 0 20px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero .x {
+    font-size: 2.4rem;
+  }
+
+  .headline {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .description {
+    font-size: 0.9rem;
+    margin-top: 16px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .nav-actions {
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 0;
+  }
+
+  .badge {
+    font-size: 0.8rem;
+    padding: 4px 8px;
+  }
+
+  .standard-tags {
+    justify-content: center;
+  }
+
+  .standard-tags .tag {
+    font-size: 0.8rem;
+    padding: 4px 8px;
+  }
+}
   /* .hero-visual {
     right: 20px;
   }
@@ -416,4 +465,4 @@ body {
   .security-badge .x-mark {
     font-size: 2rem;
   } */
-}
+
