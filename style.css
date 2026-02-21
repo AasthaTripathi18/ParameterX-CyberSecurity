@@ -316,6 +316,7 @@ body {
   flex-wrap: wrap;
   gap: 12px;
   margin-top: 10px;
+  justify-content: center;
 }
 
 .standard-tags .tag {
@@ -379,8 +380,6 @@ body {
 
   .hero {
     padding: 0 30px;
-    text-align: center;
-    height: auto;
   }
 
   .hero h1 {
@@ -428,19 +427,13 @@ body {
     line-height: 1.5rem;
   }
 
-  .hero-content {
-    max-width: 100%;
-  }
-
   .description {
     font-size: 0.9rem;
     margin-top: 16px;
   }
 
   .hero-buttons {
-    flex-direction: column;
     gap: 10px;
-    margin-top: 20px;
   }
 
   .nav-actions {
@@ -452,10 +445,6 @@ body {
   .badge {
     font-size: 0.8rem;
     padding: 4px 8px;
-  }
-
-  .standard-tags {
-    justify-content: center;
   }
 
   .standard-tags .tag {
