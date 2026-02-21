@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ParameterX | Cybersecurity Solutions</title>
   <link rel="stylesheet" href="style.css" />
+
 </head>
 <body>
   <!-- NAVBAR -->
@@ -12,7 +13,7 @@
     <div class="logo">
       <span class="shield">🛡</span> PARAMETER <span class="logo-x">X</span>
     </div>
-    
+
     <ul class="nav-links">
       <li><a href="#">Services</a></li>
       <li><a href="#">About</a></li>
@@ -23,13 +24,6 @@
     <div class="nav-actions">
       <a href="#" class="login">Login</a>
       <a href="#" class="nav-btn">Get Security Audit</a>
-    </div>
-
-    <!-- Hamburger Menu for Mobile -->
-    <div class="hamburger" onclick="toggleMenu()">
-      <span></span>
-      <span></span>
-      <span></span>
     </div>
   </nav>
 
@@ -76,18 +70,25 @@
           <span class="tag">PCI DSS</span>
         </div>
       </div>
-    </div>
+    </div> <!-- Close hero-content -->
 
+    <!-- RIGHT VISUAL
+    <div class="hero-visual">
+      <div class="orb">
+        <div class="x-mark">X</div>
+      </div>
+      <div class="protected">🔒 PROTECTED</div>
+    </div> -->
+
+    <!-- <div class="hero-visual">
+      <div class="security-badge">
+        <span class="x-mark">X</span>
+        <span class="border"></span>
+      </div>
+    </div> -->
     <!-- Decorative glow -->
     <div class="glow"></div>
   </section>
 
-  <!-- Optional JS for hamburger menu -->
-  <script>
-    function toggleMenu() {
-      const navLinks = document.querySelector('.nav-links');
-      navLinks.classList.toggle('show');
-    }
-  </script>
 </body>
 </html>
