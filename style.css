@@ -509,3 +509,135 @@ body {
     font-size: 2rem;
   } */
 
+/* =========================
+   CONTAINER
+   ========================= */
+.cyber-container {
+  position: relative;
+  width: 360px;
+  height: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left:260px;
+}
+
+/* =========================
+   ROTATING RING
+   ========================= */
+.ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 4px solid rgba(155, 89, 182, 0.55);
+  /* animation: rotateRing 18s linear infinite,
+             ringGlow 5s ease-in-out infinite; */
+  animation: rotateRing 22s linear infinite;
+  box-shadow: 0 0 10px rgba(155,89,182,0.35);
+
+}
+.ring::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background:
+    repeating-conic-gradient(
+      rgba(155,89,182,0.4) 0deg 2deg,
+      transparent 2deg 14deg
+    );
+  mask: radial-gradient(circle, transparent 62%, black 63%);
+  opacity: 0.35;
+}
+.ring::before {
+  content: "";
+  position: absolute;
+  inset: 32px;
+  border-radius: 50%;
+  border: 2.5px solid rgba(155, 89, 182, 0.35);
+  /* animation: rotateRing 18s linear infinite, */
+  animation: rotateRingReverse 14s linear infinite;
+}
+
+@keyframes rotateRing {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes ringGlow {
+  0%,100% { box-shadow: 0 0 10px rgba(155,89,182,0.35); }
+  50% { box-shadow: 0 0 22px rgba(155,89,182,0.65); }
+}
+
+.shield{
+    color:#d0c6ff;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+/* =========================
+   X INSIDE BADGE
+   ========================= */
+/* .x-line {
+  position: absolute;
+  width: 10px;
+  height: 105px;
+  animation: xPulse 5s ease-in-out infinite;
+  background: rgba(194, 167, 221, 0.878);
+  border-radius: 6px;
+  transform: rotate(45deg);
+  box-shadow: 0 0 4px rgba(155,89,182,0.4);;
+}
+
+
+@keyframes xPulse {
+  0%,100% {
+    box-shadow: 0 0 4px rgba(155,89,182,0.4);
+  }
+  50% {
+    box-shadow: 0 0 12px rgba(155,89,182,0.7);
+  }
+}
+
+.x-line.second {
+  transform: rotate(-45deg);
+} */
+
+.x-line {
+  position: absolute;
+  width: 10px;              /* slimmer */
+  height: 106px;            /* slightly shorter */
+  background: linear-gradient(
+    to bottom,
+    rgba(109, 91, 154, 0.9),
+    rgba(108, 88, 128, 0.85)
+  );
+  font-weight: 800;
+  border-radius: 10px;
+  transform: rotate(45deg);
+  animation: xPulse 6s ease-in-out infinite;
+  box-shadow: 0 0 3px rgba(155,89,182,0.35);
+}
+
+/* second stroke */
+.x-line.second {
+  transform: rotate(-45deg);
+}
+
+/* calm pulse */
+@keyframes xPulse {
+  0%,100% {
+    box-shadow: 0 0 3px rgba(155,89,182,0.35);
+  }
+  50% {
+    box-shadow: 0 0 9px rgba(155,89,182,0.55);
+  }
+}
+.x-line::after {
+  content: "";
+  position: absolute;
+  inset: 20%;
+  background: rgba(255,255,255,0.15);
+  border-radius: inherit;
+}
+
