@@ -322,10 +322,6 @@ body {
   transform: translateY(-50%);
 }
 
-/* ROTATING ORB
-.orb {
-  animation: rotate 25s linear infinite;
-} */
 
 @keyframes rotate {
   from { transform: rotate(0deg); }
@@ -338,68 +334,6 @@ body {
 
 @keyframes float { 50% { transform: translateY(-12px); } }
 
-/* HERO VISUAL / SECURITY BADGE */
-/* .hero-visual {
-  position: absolute;
-  top: 50%;
-  right: 60px; 
-  transform: translateY(-50%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 50;
-}
-
-.security-badge {
-  position: relative;
-  width: 100px;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-} */
-
-/* X MARK */
-/* .security-badge .x-mark {
-  font-size: 3rem;
-  font-weight: 900;
-  color: #9b59b6;
-  text-shadow: 0 0 12px rgba(155,89,182,0.9),
-               0 0 30px rgba(155,89,182,0.7);
-  z-index: 2;
-  animation: pulseX 3s ease-in-out infinite;
-} */
-
-/* MOVING BORDER */
-/* .security-badge .border {
-  position: absolute;
-  top: -5px;
-  left: -5px;
-  right: -5px;
-  bottom: -5px;
-  border: 3px solid transparent;
-  border-radius: 20px;
-  border-image: linear-gradient(45deg, #6cf2ff, #ff6cf2, #f2ff6c, #6cf2ff) 1;
-  animation: rotateBorder 4s linear infinite;
-  z-index: 1;
-}
-
-@keyframes rotateBorder {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-} */ 
-
-/* Optional hover glow */
-/* .security-badge:hover .border {
-  box-shadow: 0 0 20px rgba(155,89,182,0.6),
-              0 0 40px rgba(155,89,182,0.4);
-} */
-
-
-/* =======================
-   RESPONSIVE MEDIA QUERIES
-   ======================= */
 
 /* Tablets / Small Screens */
 @media (max-width: 768px) {
@@ -498,20 +432,8 @@ body {
     padding: 4px 8px;
   }
 }
-  /* .hero-visual {
-    right: 20px;
-  }
-  .security-badge {
-    width: 70px;
-    height: 70px;
-  }
-  .security-badge .x-mark {
-    font-size: 2rem;
-  } */
 
-/* =========================
-   CONTAINER
-   ========================= */
+/* CONTAINER*/
 .cyber-container {
   position: relative;
   width: 360px;
@@ -522,9 +444,7 @@ body {
   margin-left:260px;
 }
 
-/* =========================
-   ROTATING RING
-   ========================= */
+/* ROTATING RING */
 .ring {
   position: absolute;
   inset: 0;
@@ -575,33 +495,6 @@ body {
     align-items: center;
 
 }
-/* =========================
-   X INSIDE BADGE
-   ========================= */
-/* .x-line {
-  position: absolute;
-  width: 10px;
-  height: 105px;
-  animation: xPulse 5s ease-in-out infinite;
-  background: rgba(194, 167, 221, 0.878);
-  border-radius: 6px;
-  transform: rotate(45deg);
-  box-shadow: 0 0 4px rgba(155,89,182,0.4);;
-}
-
-
-@keyframes xPulse {
-  0%,100% {
-    box-shadow: 0 0 4px rgba(155,89,182,0.4);
-  }
-  50% {
-    box-shadow: 0 0 12px rgba(155,89,182,0.7);
-  }
-}
-
-.x-line.second {
-  transform: rotate(-45deg);
-} */
 
 .x-line {
   position: absolute;
@@ -640,4 +533,5 @@ body {
   background: rgba(255,255,255,0.15);
   border-radius: inherit;
 }
+
 
